@@ -107,11 +107,15 @@ if (isset($_GET['id'])){
                                         </div>
                                         <div class="form-group">
                                             <label>Summary</label>
-                                            <textarea name="blog_summary" id="summernote_summary" class="form-control" rows="3"></textarea>
+                                            <textarea name="blog_summary" id="summernote_summary" class="form-control" rows="3">
+                                                <?php echo $rs['v_post_summary'] ?>
+                                            </textarea>
                                         </div>                                       
                                         <div class="form-group">
                                             <label>Content</label>
-                                            <textarea name="blog_content" id="summernote_content" class="form-control" rows="3"></textarea>
+                                            <textarea name="blog_content" id="summernote_content" class="form-control" rows="3">
+                                                <?php echo $rs['v_blog_content'] ?>
+                                            </textarea>
                                         </div>
                                         <?php  
                                             $tag = new tag($db);
