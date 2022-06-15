@@ -14,14 +14,14 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
             $main_image = $_FILES['main_image']['name'];
             move_uploaded_file($_FILES['main_image']['tmp_name'], $target_file.$main_image);
         }else{
-            $main_image="";
+            $main_image=$_POST['old_main_image'];
         }
 
         if(!empty($_FILES['alt_image']['name'])){
             $alt_image = $_FILES['alt_image']['name'];
             move_uploaded_file($_FILES['alt_image']['tmp_name'], $target_file.$alt_image);
         }else{
-            $alt_image="";
+            $alt_image=$_POST['old_alt_image'];
         }
 
         $blogs->n_blog_post_id = $_POST['blog_id'];

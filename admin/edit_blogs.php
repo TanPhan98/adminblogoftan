@@ -103,7 +103,7 @@ if (isset($_GET['id'])){
                                             <?php if ($blogs->v_alt_image_url!="") { ?>
                                                 <img src="../images/upload/<?php echo $blogs->v_alt_image_url ?>" width="500px" alt="">
                                             <?php } ?>
-                                            <input type="hidden" name="old_main_image" value="<?php echo $blogs->v_alt_image_url ?>">
+                                            <input type="hidden" name="old_alt_image" value="<?php echo $blogs->v_alt_image_url ?>">
                                         </div>
                                         <div class="form-group">
                                             <label>Summary</label>
