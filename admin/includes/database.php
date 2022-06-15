@@ -1,8 +1,8 @@
 <?php  
 class database{
-	private $dns = "mysql:host=localhost;dbname=blog";
-	private $username = "root";
-	private $password = "";
+	private $dns = "mysql:host=bwsmc7iunmi6rxbcac75-mysql.services.clever-cloud.com;dbname=bwsmc7iunmi6rxbcac75";
+	private $username = "ug6prs968jfluxoq";
+	private $password = "r0qSagbxdaC0sQ6eHVJt";
 	private $conn;
 
 	public function connect(){
