@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
                 </div>
                 <?php if (isset($flag)) { ?>
                     <div class="alert alert-info" >
-                            <strong>Heads up!</strong> <?php echo $flag ?>
+                            <strong>Success!</strong> <?php echo $flag ?>
                    </div>
                 <?php } ?>
 
