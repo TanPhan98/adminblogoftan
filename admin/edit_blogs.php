@@ -57,7 +57,7 @@ if (isset($_GET['id'])){
                 </div>
                 <?php if (isset($flag)) { ?>
                     <div class="alert alert-info" >
-                            <strong>Heads up!</strong> <?php echo $flag ?>
+                            <strong>Success!</strong> <?php echo $flag ?>
                    </div>
                 <?php } ?>
                 <div class="row">
@@ -108,13 +108,13 @@ if (isset($_GET['id'])){
                                         <div class="form-group">
                                             <label>Summary</label>
                                             <textarea name="blog_summary" id="summernote_summary" class="form-control" rows="3">
-                                                <?php echo $rs['v_post_summary'] ?>
+                                                <?php echo $blogs->v_post_summary ?>
                                             </textarea>
                                         </div>                                       
                                         <div class="form-group">
                                             <label>Content</label>
                                             <textarea name="blog_content" id="summernote_content" class="form-control" rows="3">
-                                                <?php echo $rs['v_blog_content'] ?>
+                                                <?php echo $blogs->v_post_content ?>
                                             </textarea>
                                         </div>
                                         <?php  

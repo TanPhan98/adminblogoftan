@@ -87,8 +87,6 @@ class blog{
 		$this->v_post_title = htmlspecialchars(strip_tags($this->v_post_title));
 		$this->v_post_meta_title = htmlspecialchars(strip_tags($this->v_post_meta_title));
 		$this->v_post_path = htmlspecialchars(strip_tags($this->v_post_path));
-		$this->v_post_summary = htmlspecialchars(strip_tags($this->v_post_summary));
-		$this->v_post_content = htmlspecialchars(strip_tags($this->v_post_content));
 
 		//Bind data
 		$stmt->bindParam(':post_title',$this->v_post_title);
@@ -141,8 +139,6 @@ class blog{
 		$this->v_post_title = htmlspecialchars(strip_tags($this->v_post_title));
 		$this->v_post_meta_title = htmlspecialchars(strip_tags($this->v_post_meta_title));
 		$this->v_post_path = htmlspecialchars(strip_tags($this->v_post_path));
-		$this->v_post_summary = htmlspecialchars(strip_tags($this->v_post_summary));
-		$this->v_post_content = htmlspecialchars(strip_tags($this->v_post_content));
 		$this->v_main_image_url = htmlspecialchars(strip_tags($this->v_main_image_url));
 		$this->v_alt_image_url = htmlspecialchars(strip_tags($this->v_alt_image_url));
 
