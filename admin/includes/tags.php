@@ -104,7 +104,7 @@ class tag{
 		$this->n_blog_post_id = htmlspecialchars(strip_tags($this->n_blog_post_id));
 
 		//Bind data
-		$stmt->bindParam(':get_tag_id',$this->n_blog_post_id);
+		$stmt->bindParam(':get_blog_post_id',$this->n_blog_post_id);
 
 		//Execute query
 		if($stmt->execute()){

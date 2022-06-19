@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
             $flag = "Update successful!";        
         }
         $new_tag =new tag($db);
-        $new_tag->n_blog_post_id = $blogs->n_blog_post_id;
+        $new_tag->n_blog_post_id = $blogs->last_id();
         $new_tag->v_tag = $_POST['blog_tags'];
         $new_tag->update();
     }
