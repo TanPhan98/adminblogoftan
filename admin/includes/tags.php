@@ -70,7 +70,7 @@ class tag{
 		$sql = "UPDATE $this->table
 		          SET v_tag = :tag
 		          WHERE 
-		          	  n_tag_id = :get_tag_id";
+		          	  n_blog_post_id = :get_tag_id";
 		//Prepare statement
 		$stmt = $this->conn->prepare($sql);
 		//Clean data
@@ -78,7 +78,7 @@ class tag{
 
 
 		//Bind data
-		$stmt->bindParam(':get_tag_id',$this->n_tag_id);
+		$stmt->bindParam(':get_tag_id',$this->n_blog_post_id);
 		$stmt->bindParam(':tag',$this->v_tag);
 
 		//Execute query
