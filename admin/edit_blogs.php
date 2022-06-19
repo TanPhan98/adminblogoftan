@@ -125,7 +125,6 @@ if (isset($_GET['id'])){
                                         <div class="form-group">
                                             <label>Blog Tags </label>
                                             <input name="blog_tags" value="<?php echo $tag->v_tag ?>" class="form-control" placeholder="Enter path category">
-                                            <!-- <input type="hidden" name="old_tag" value=""> -->
                                         </div>                                        
                                         <div class="form-group">
                                             <label>Blog Path</label>
