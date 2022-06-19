@@ -95,16 +95,16 @@ class tag{
 
 		//Create query
 		$query = "DELETE FROM $this->table
-		          WHERE n_tag_id = :get_tag_id";
+		          WHERE n_blog_post_id = :get_tag_id";
 		
 		//Prepare statement
 		$stmt = $this->conn->prepare($query);
 
 		//Clean data
-		$this->n_tag_id = htmlspecialchars(strip_tags($this->n_tag_id));
+		$this->n_blog_post_id = htmlspecialchars(strip_tags($this->n_blog_post_id));
 
 		//Bind data
-		$stmt->bindParam(':get_tag_id',$this->n_tag_id);
+		$stmt->bindParam(':get_tag_id',$this->n_blog_post_id);
 
 		//Execute query
 		if($stmt->execute()){
