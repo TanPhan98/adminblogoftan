@@ -56,7 +56,7 @@ class user{
 		$this->v_image=$row['v_image'];
 		$this->v_message=$row['v_message'];
 		$this->d_date_updated=$row['d_date_updated'];
-		$this->d_time_updated=$row['d_date_updated'];		
+		$this->d_time_updated=$row['d_time_updated'];		
 	}
 
 	//Create blog_post
@@ -72,7 +72,7 @@ class user{
 						v_image = :image,
 						v_message = :message,
 						d_date_updated = :date_updated,
-						d_time_updated = :date_updated";
+						d_time_updated = :time_updated";
 		
 		//Prepare statement
 		$stmt = $this->conn->prepare($query);
@@ -113,7 +113,7 @@ class user{
 						v_image = :image,
 						v_message = :message,
 						d_date_updated = :date_updated,
-						d_time_updated = :date_updated
+						d_time_updated = :time_updated
 		          WHERE 
 		          	  	n_user_id  = :user_id";
 
